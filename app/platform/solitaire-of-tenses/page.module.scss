@@ -1,0 +1,26 @@
+.main {
+  display: grid;
+  grid-template-areas: "aside article";
+  grid-template-columns:  1fr 4fr;
+  min-height: 100vh;
+
+  .aside{
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    z-index: 10;
+    // overflow-y: scroll;
+    // overflow-x: visible;
+    background: hsla(0, 0%, 100%, 0.93);
+    border-right: 1px solid #c8c8c8;
+    contain: strict;
+    
+  }
+  .article{
+    grid-area: article;
+    z-index: 12;
+  }
+}
+
